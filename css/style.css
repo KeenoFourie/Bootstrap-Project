@@ -1,11 +1,12 @@
+/* Home */
+
 body {
     font-family: 'Bruno Ace SC', cursive;
     color: white;
-    background-image: url("../images/background-image.jpg");
+    background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-blend-mode: exclusion;
 }
 
 .Logo {
@@ -26,16 +27,6 @@ body {
     cursor: pointer;
 }
 
-.sub-head {
-    color: white;
-    text-align: center;
-}
-
-.main-head {
-    color: white;
-    text-align: center;
-}
-
 .card-body {
     text-align: center;
     margin: 2rem;
@@ -47,19 +38,20 @@ body {
 
 img {
     height: 25rem;
+    border-radius: 20rem;
 }
 
 footer {
     background-color: black;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .image-icon {
     border-radius: 15rem;
     height: 50px;
     filter: saturate(100%);
-    margin: 0rem 2rem 0rem;
+    margin: 0rem 4rem 0rem;
 }
 
 .foot {
@@ -79,9 +71,120 @@ footer {
 .animation {
     animation-name: text;
     animation-duration: 4s;
+    color: rgb(0, 0, 0);
 }
 
 @keyframes text {
     0%{margin-top: 400px;}
     100%{margin-top: 0px;}
 }
+
+/* About */
+
+.profile-image {
+    border-radius: 20rem;
+    height: 20rem;
+    float: inline-start;
+    margin: 3rem 40% 3rem;
+    border: 3px solid black;
+}
+
+.about-me {
+    margin: 4rem;
+    
+}
+
+.heading-about-me {
+    text-align: center;
+}
+
+.card1 {
+    box-shadow: 0 0px 20px 0 rgb(0, 0, 0);
+    transition: 0.3s;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    height: 20rem;
+    padding: 0.5rem;
+}
+
+.info-details {
+    margin: 4rem;
+}
+
+.card2 {
+    box-shadow: 0 0px 20px 0 rgb(0, 0, 0);
+    transition: 0.3s;
+    color: black;
+    background-color: white;
+    height: 25rem;
+    padding: 1px;
+}
+
+.github-linkedin {
+    text-decoration: none;
+    color: rgb(72, 72, 72);
+}
+
+.card3 {
+    box-shadow: 0 0px 20px 0 rgb(0, 0, 0);
+    transition: 0.3s;
+    color: black;
+    background-color: white;
+    height: 16rem;
+    padding: 1px;
+}
+
+.passion-board {
+    margin: 4rem;
+}
+
+.soft-skills {
+    margin: 4rem;
+}
+
+.card4 {
+    box-shadow: 0 0px 20px 0 rgb(0, 0, 0);
+    transition: 0.3s;
+    color: black;
+    background-color: white;
+    height: 16rem;
+    padding: 1px;
+}
+
+.technical-skills {
+    height: 70px;
+    border-radius: 0rem;
+}
+
+.card5 {
+    box-shadow: 0 0px 20px 0 rgb(0, 0, 0);
+    transition: 0.3s;
+    color: black;
+    background-color: white;
+    height: 10rem;
+    padding: 1px;
+}
+
+.education {
+    margin: 4rem;
+}
+
+.card6 {
+    box-shadow: 0 0px 20px 0 rgb(0, 0, 0);
+    transition: 0.3s;
+    color: black;
+    background-color: white;
+    height: 6rem;
+    padding: 1px;
+}
+
+.work-experience {
+    margin: 6rem;
+}
+
+/* Project */
+
+.project-slideshow {
+    color: black;
+}
+
