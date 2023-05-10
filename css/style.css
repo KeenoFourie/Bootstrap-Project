@@ -7,6 +7,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    margin-bottom: 10rem;
 }
 
 .Logo {
@@ -69,14 +70,13 @@ footer {
 }
 
 .animation {
-    animation-name: text;
+    animation-name: home-animation;
     animation-duration: 4s;
     color: rgb(0, 0, 0);
 }
 
-@keyframes text {
+@keyframes home-animation {
     0%{margin-top: 400px;}
-    100%{margin-top: 0px;}
 }
 
 /* About */
@@ -84,9 +84,13 @@ footer {
 .profile-image {
     border-radius: 20rem;
     height: 20rem;
-    float: inline-start;
-    margin: 3rem 40% 3rem;
-    border: 3px solid black;
+    margin: 3rem 4rem 3rem;
+    animation-name: profile-image;
+    animation-duration: 4s;
+}
+
+@keyframes profile-image {
+    0%{margin-top: 400px;}
 }
 
 .about-me {
@@ -94,17 +98,22 @@ footer {
     
 }
 
-.heading-about-me {
-    text-align: center;
-}
-
 .card1 {
     box-shadow: 0 0px 20px 0 rgb(0, 0, 0);
     transition: 0.3s;
     color: rgb(0, 0, 0);
     background-color: white;
-    height: 20rem;
+    height: 22rem;
     padding: 0.5rem;
+    position: absolute;
+    top: 8rem;
+    left: 30%;
+    animation-name: card-1;
+    animation-duration: 4s;
+}
+
+@keyframes card-1 {
+    0%{margin-top: 400px;}
 }
 
 .info-details {
@@ -116,8 +125,17 @@ footer {
     transition: 0.3s;
     color: black;
     background-color: white;
-    height: 25rem;
+    height: 27rem;
     padding: 1px;
+    position: absolute;
+    top: 8rem;
+    right: 10%;
+    animation-name: card-2;
+    animation-duration: 4s;
+}
+
+@keyframes card-2 {
+    0%{margin-top: 400px;}
 }
 
 .github-linkedin {
@@ -130,8 +148,12 @@ footer {
     transition: 0.3s;
     color: black;
     background-color: white;
-    height: 16rem;
+    height: 13rem;
     padding: 1px;
+    position: absolute;
+    top: 33rem;
+    animation-name: card-2;
+    animation-duration: 4s;
 }
 
 .passion-board {
@@ -147,8 +169,13 @@ footer {
     transition: 0.3s;
     color: black;
     background-color: white;
-    height: 16rem;
+    height: 19rem;
     padding: 1px;
+    position: absolute;
+    top: 38rem;
+    right: 10%;
+    animation-name: card-2;
+    animation-duration: 4s;
 }
 
 .technical-skills {
@@ -161,8 +188,12 @@ footer {
     transition: 0.3s;
     color: black;
     background-color: white;
-    height: 10rem;
+    height: 12rem;
     padding: 1px;
+    position: absolute;
+    top: 49rem;
+    animation-name: card-2;
+    animation-duration: 4s;
 }
 
 .education {
@@ -174,8 +205,13 @@ footer {
     transition: 0.3s;
     color: black;
     background-color: white;
-    height: 6rem;
+    height: 10rem;
     padding: 1px;
+    position: absolute;
+    top: 49rem;
+    left: 36%;
+    animation-name: card-2;
+    animation-duration: 4s;
 }
 
 .work-experience {
@@ -186,5 +222,48 @@ footer {
 
 .project-slideshow {
     color: black;
+    background-color: rgba(0, 0, 0, 0.384);
+    animation-name: text;
+    animation-duration: 4s;
 }
+
+@keyframes text {
+    0%{margin-left: 2000px;}
+    100%{margin-left: px;}
+}
+
+/* Contact */
+
+form {
+    text-align: center;
+    animation-name: form-contact;
+    animation-duration: 3s;
+}
+
+@keyframes form-contact {
+    0%{margin-left: 100px;}
+    50%{margin-left: 200px;}
+    75%{margin-left: -100px;}
+}
+
+/* Testimonials */
+
+.card-testimonials {
+    text-align: center;
+}
+
+.placement-1 {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.placement-2 {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* Media Queries */
 
