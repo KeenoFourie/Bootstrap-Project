@@ -250,20 +250,33 @@ form {
 
 .card-testimonials {
     text-align: center;
+    animation-name: testimonials;
+    animation-duration: 3s;
+}
+
+@keyframes testimonials {
+    0%{margin-top: 400px;}
 }
 
 .placement-1 {
-    margin: 1rem;
+    margin: 2rem;
     display: flex;
     justify-content: space-evenly;
 }
 
 .placement-2 {
-    margin: 1rem;
+    margin: 4rem;
     display: flex;
     justify-content: space-evenly;
+}
+
+.selfies {
+    border: 2px solid black;
 }
 
 
 /* Media Queries */
 
+@media screen and(max-width: 650px;) {
+    
+}
