@@ -19,13 +19,13 @@ body {
     text-decoration: none;
     color: white;
     text-align: center;
-    padding: 2.5rem 5rem 2.5rem;
+    padding: 0.7rem 6rem 0.7rem;
 }
 
 .nav-links:hover {
-    background-color: white;
-    color: black;
+    color: white;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .card-body {
@@ -56,6 +56,24 @@ footer {
 }
 
 .foot {
+    /* position: fixed; */
+    bottom: 0%;
+    width: 100%;
+}
+
+.contact-foot {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+
+.project-foot {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+
+.home-foot {
     position: fixed;
     bottom: 0%;
     width: 100%;
@@ -84,7 +102,7 @@ footer {
 .profile-image {
     border-radius: 20rem;
     height: 20rem;
-    margin: 3rem 4rem 3rem;
+    margin: 3rem 37rem 3rem;
     animation-name: profile-image;
     animation-duration: 4s;
 }
@@ -106,7 +124,7 @@ footer {
     height: 22rem;
     padding: 0.5rem;
     position: absolute;
-    top: 8rem;
+    top: 13rem;
     left: 30%;
     animation-name: card-1;
     animation-duration: 4s;
@@ -128,7 +146,7 @@ footer {
     height: 27rem;
     padding: 1px;
     position: absolute;
-    top: 8rem;
+    top: 13rem;
     right: 10%;
     animation-name: card-2;
     animation-duration: 4s;
@@ -151,7 +169,7 @@ footer {
     height: 13rem;
     padding: 1px;
     position: absolute;
-    top: 33rem;
+    top: 38rem;
     animation-name: card-2;
     animation-duration: 4s;
 }
@@ -172,7 +190,7 @@ footer {
     height: 19rem;
     padding: 1px;
     position: absolute;
-    top: 38rem;
+    top: 43rem;
     right: 10%;
     animation-name: card-2;
     animation-duration: 4s;
@@ -191,7 +209,7 @@ footer {
     height: 12rem;
     padding: 1px;
     position: absolute;
-    top: 49rem;
+    top: 54rem;
     animation-name: card-2;
     animation-duration: 4s;
 }
@@ -208,7 +226,7 @@ footer {
     height: 10rem;
     padding: 1px;
     position: absolute;
-    top: 49rem;
+    top: 54rem;
     left: 36%;
     animation-name: card-2;
     animation-duration: 4s;
@@ -252,31 +270,160 @@ form {
     text-align: center;
     animation-name: testimonials;
     animation-duration: 3s;
+    margin-bottom: 5rem;
 }
 
 @keyframes testimonials {
     0%{margin-top: 400px;}
 }
 
-.placement-1 {
-    margin: 2rem;
-    display: flex;
-    justify-content: space-evenly;
+.card-body {
+    text-align: center;
+    width: 100%;
 }
 
-.placement-2 {
-    margin: 4rem;
-    display: flex;
-    justify-content: space-evenly;
+.tested {
+    width: 50%;
+    margin: auto;
 }
 
 .selfies {
     border: 2px solid black;
+    margin-top: 1rem;
+}
+
+.formation {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 2rem;
+}
+
+.content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 2rem;
 }
 
 
 /* Media Queries */
 
-@media screen and(max-width: 650px;) {
+@media screen and (max-width: 700px) {
+    
+    /* home */
+    
+    body {
+        background-image: none;
+    }
+
+    .abo{
+        margin: auto;
+        width: 12rem;
+    }
+
+    .work-experience{
+        margin: 4rem;
+    }
+   
+
+    img {
+        display: none;
+    }
+
+    .nav-links:hover {
+        margin: 0;
+        padding: 0;
+        color: transparent;
+        text-decoration: underline;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card-body {
+        margin: 0;
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .iconic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-icon {
+        display: flex;
+        margin: 1rem;
+    }
+
+    /* Projects */
+
+    /* About */
+
+    .profile-image {
+        display: none;
+    }
+
+    .card1 {
+        position: static;
+    }
+    
+    .card2 {
+        position: static;
+    }
+    
+    .card3 {
+        position: static;
+    }
+  
+    .card4 {
+        position: static;
+    }
+    
+    .card5 {
+        position: static;
+    }
+    
+    .card6 {
+        position: static;
+    }
+
+    .all-cards {
+        width: 100%;
+    }
+
+    .greeting {
+        position: static;
+    }
+
+    .card-testimonials {
+        border-radius: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 5px;
+        flex: none;
+    }
+
+    .card-body {
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    .everything {
+        width: 100%;
+    }
+    
     
 }
