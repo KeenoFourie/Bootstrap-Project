@@ -264,6 +264,15 @@ form {
     75%{margin-left: -100px;}
 }
 
+.progress {
+    margin: 1rem;
+    width: 75%;
+}
+
+.progress-bar {
+    text-align: center;
+}
+
 /* Testimonials */
 
 .card-testimonials {
